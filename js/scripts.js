@@ -29,10 +29,21 @@ $(function() {
   $("form#findReplace").submit(function(event) {
     var sentence = $("input#string").val();
     var oldWord = $("input#oldWord").val();
+    var result = findAndReplace(sentence);
+
+    $("#result").text(result);
+    $(".newSentence").show()
+    $("#string").hide();
+    $("#oldWord").show();
+    $("#newWord").show();
+    event.preventDefault();
+  });
+  $("form#findReplace").submit(function(event) {
+    var sentence = $("input#string").val();
+    var oldWord = $("input#oldWord").val();
     var newWord = $("input#newWord").val();
     var result = findAndReplace(sentence, oldWord, newWord);
 
     $("#result").text(result);
-    event.preventDefault();
   });
 });
