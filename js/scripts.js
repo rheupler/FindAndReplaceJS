@@ -9,21 +9,6 @@ var findAndReplace = function(string, oldWord, newWord) {
 };
 
 
-// $(document).ready(function() {
-//   $("form#findReplace").submit(function(event) {
-//     var phrase = $("#phrase").val();
-//     var oldWord = $("#oldWord").val();
-//     var newWord = $("#newWord").val();
-//     var result = findReplace(phrase, oldWord, newWord);
-//
-//     $("#results p").text(result);
-//     $("#results").show();
-//
-//     event.preventDefault();
-//   })
-// })
-
-
 
 $(function() {
   $("form#findReplace").submit(function(event) {
